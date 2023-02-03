@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/new logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li id="department"><a href="comp_engg.html">DEPARTMENTS</a></li>
+            <div id="dropdown-wrapper">
+              <a href="https://ltce.in/com_dep_about"> Computer Engineering </a>
+              <br />
+              <a href="https://ltce.in/mechanical_engg_about">
+                Mechanical Engineering
+              </a>
+              <br />
+              <a href="https://ltce.in/electrical_engg_about">
+                Electrical Engineering
+              </a>
+              <br />
+              <a href="https://ltce.in/etc_engg_about">
+                Electronics & Telecom Engg.
+              </a>
+              <br />
+              <a href="https://ltce.in/cse-iot-cyber-Introduction">
+                CSE (IoT and Cyber Security)
+              </a>
+              <br />
+              <a href="https://ltce.in/cse_data_science_about">
+                CSE (Data Science)
+              </a>
+              <br />
+              <a href="https://ltce.in/cse_aiml_about"> CSE (AI & ML) </a>
+              <br />
+              <!-- <a href="https://ltce.in/1st_year_dep_about"> First Year </a> -->
+              <br />
+            </div>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!-- -----------------------about us content---------------------- -->
+    <section class="about-us">
+      <div class="class row">
+        <div class="about-col">
+          <h1>We are the World's Largest University</h1>
+          <p>
+            Lokmanya Tilak College of Engineering, a premier regional
+            engineering college in Navi Mumbai, was established in 1994. It is
+            affiliated to University of Mumbai. It is recognized by the AICTE
+            and also accredited by the National Board of Accreditation (NBA).
+            The college has clean and beautiful campus at Koparkhairane. The
+            Institute has a solid administrative & faculty support which is a
+            pre-requisite for any successful organization.
+          </p>
+          <a
+            href="https://collegedunia.com/college/14099-lokmanya-tilak-college-of-engineering-ltce-navi-mumbai"
+            class="hero-btn red-btn"
+            >EXPLORE NOW</a
+          >
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------footer-------- -->
+    <section class="class footer">
+      <h4>About Us</h4>
+      <p>
+        Lokmanya Tilak College of Engineering, a premier regional engineering
+        college in Navi Mumbai, was established in 1994. It is affiliated to
+        University of Mumbai. It is recognized by the AICTE and also accredited
+        by the National Board of Accreditation (NBA). The college has clean and
+        beautiful campus at Koparkhairane. The Institute has a solid
+        administrative & faculty support which is a pre-requisite for any
+        successful organization.
+      </p>
+      <div class="class icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa fa-heart-o"></i> by Radha Jha</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
